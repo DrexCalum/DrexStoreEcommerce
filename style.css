@@ -51,8 +51,8 @@ p{
     min-width: 300px;
 }
 .col-2 img{
-    max-width: 120%;
-    padding: 50px 20px;
+    max-width: 110%;
+    padding: 50px 0px;
 }
 .col-2 h1{
     font-size: 50px;
@@ -437,6 +437,15 @@ th:last-child{
 
 /* Media query for less than 600 sscreen size */
 @media only screen and (max-width: 600px) {
+    .col-2 {
+        text-align: center; /* Center align the content */
+    }
+    .col-2 img {
+        display: inline-block; /* Make the image inline block to center it */
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 30px/* Ensure image doesn't overflow its container */
+    }
     .row{
         text-align: center;
     }
